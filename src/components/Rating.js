@@ -119,7 +119,7 @@ export default class Rating extends Component {
     }),
     disabled: PropTypes.bool,
     tabIndex: PropTypes.number,
-    character: PropTypes.string,
+    character: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
     characterProps: PropTypes.object,
     preventFocusStyleForTouchAndClick: PropTypes.bool,
     'aria-label': PropTypes.string,
